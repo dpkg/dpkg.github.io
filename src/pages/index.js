@@ -5,47 +5,60 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import { urls } from '../../personal.config.json';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>LinkedIn</>,
+    imageUrl: 'img/linkedin.svg',
+    url: urls.LinkedIn,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Check me out on LinkedIn to find out more about the kind of work I do.
       </>
-    ),
+    )
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Twitter</>,
+    imageUrl: 'img/twitter.svg',
+    url: urls.Twitter,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Not too active, but you can follow my occasional updates.
       </>
-    ),
+    )
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>GitHub</>,
+    imageUrl: 'img/github.svg',
+    url: urls.GitHub,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Not many contributions to open source, most of my work has been towards my current organization.
       </>
-    ),
+    )
   },
+  {
+    title: <>Telegram</>,
+    imageUrl: 'img/telegram.svg',
+    url: urls.Telegram,
+    description: (
+      <>
+        If you want to reach me instantly, ping me.
+      </>
+    )
+  }
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, url}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames('col col--4', styles.feature)}>
+    <div className={classnames('col col--3', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+            <a href={url || '#'} target={url ? '_blank' : '_self'}>
+                <img className={styles.featureImage} src={imgUrl} alt={title} />
+            </a>
         </div>
       )}
       <h3>{title}</h3>
