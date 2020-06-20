@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
+// import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
@@ -9,22 +9,23 @@ import { urls } from '../../personal.config.json';
 
 const features = [
   {
-    title: <>LinkedIn</>,
-    imageUrl: 'img/linkedin.svg',
-    url: urls.LinkedIn,
-    description: (
-      <>
-        Check me out on LinkedIn to find out more about the kind of work I do.
-      </>
-    )
-  },
-  {
     title: <>Twitter</>,
     imageUrl: 'img/twitter.svg',
     url: urls.Twitter,
     description: (
       <>
-        Not too active, but you can follow my occasional updates.
+        Not a regular tweeter, but if you want to follow my occasional updates.
+      </>
+    )
+  },
+  {
+    title: <>LinkedIn</>,
+    imageUrl: 'img/linkedin.svg',
+    url: urls.LinkedIn,
+    description: (
+      <>
+        Check me out on here to find out more about my professional background
+        and the kind of work I have been doing.
       </>
     )
   },
@@ -34,7 +35,8 @@ const features = [
     url: urls.GitHub,
     description: (
       <>
-        Not many contributions to open source, most of my work has been towards my current organization.
+        You'll not find too many contributions on my public profile,
+        I mostly commit behind my corporate organizational accounts.
       </>
     )
   },
@@ -44,7 +46,7 @@ const features = [
     url: urls.Telegram,
     description: (
       <>
-        If you want to reach me instantly, ping me.
+        If you want to reach me instantly.
       </>
     )
   }
@@ -78,16 +80,16 @@ function Home() {
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={classnames(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('blog/')}>
-              Read my blog
-            </Link>
-          </div>
+          {/*<div className={styles.buttons}>*/}
+          {/*  <Link*/}
+          {/*    className={classnames(*/}
+          {/*      'button button--outline button--secondary button--lg',*/}
+          {/*      styles.getStarted,*/}
+          {/*    )}*/}
+          {/*    to={useBaseUrl('blog/')}>*/}
+          {/*    Read my blog*/}
+          {/*  </Link>*/}
+          {/*</div>*/}
         </div>
       </header>
       <main>
