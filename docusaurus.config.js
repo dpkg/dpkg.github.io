@@ -17,7 +17,7 @@ module.exports = {
       },
       links: [
         { label: 'Blog', position: 'left', to: 'blog' },
-        { label: 'Contact', position: 'left', href: 'mailto:contact@dpkg.in?subject=Mail from dpkg.in homepage' },
+        { label: 'Contact', position: 'left', href: 'mailto:contact@dpkg.in?subject=Mail from dpkg.in homepage', className: 'contact-link' },
         { label: 'GitHub', position: 'right', href: 'https://github.com/dpkg/dpkg.github.io'},
       ],
     },
