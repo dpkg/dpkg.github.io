@@ -3,8 +3,8 @@ const { urls } = require('./personal.config.json');
 module.exports = {
   title: 'Deepak Giri',
   tagline: 'The perfect place to find out more about me',
-  url: 'https://dpkg.in',
-  baseUrl: '/',
+  url: 'https://dpkg.github.io',
+  baseUrl: '/dpkg.github.io/',
   favicon: 'img/favicon.ico',
   organizationName: 'dpkg', // Usually your GitHub org/user name.
   projectName: 'dpkg.github.io', // Usually your repo name.
@@ -17,6 +17,7 @@ module.exports = {
       },
       links: [
         { label: 'Blog', position: 'left', to: 'blog' },
+        { label: 'Contact', position: 'left', href: 'mailto:contact@dpkg.in?subject=Mail from dpkg.in homepage' },
         { label: 'GitHub', position: 'right', href: 'https://github.com/dpkg/dpkg.github.io'},
       ],
     },
@@ -71,7 +72,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Deepak Giri &nbsp;&nbsp;|&nbsp;&nbsp; Built with Docusaurus.v2`,
+      copyright: `Copyright © ${new Date().getFullYear()} Deepak Giri &nbsp;&nbsp;|&nbsp;&nbsp; Powered by Docusaurus`,
     },
   },
   presets: [
