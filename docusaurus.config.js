@@ -1,24 +1,24 @@
-const { urls } = require('./personal.config.json');
+const { name, email, statusEmoji, urls, config } = require('./personal.config.json');
 
 module.exports = {
-  title: 'Deepak Giri',
+  title: name,
   tagline: 'The perfect place to find out more about me',
-  url: 'https://dpkg.github.io',
+  url: `https://${config.gitHub.user}.github.io`,
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'dpkg', // Usually your GitHub org/user name.
-  projectName: 'dpkg.github.io', // Usually your repo name.
+  organizationName: config.gitHub.user, // Usually your GitHub org/user name.
+  projectName: `${config.gitHub.user}.github.io`, // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Deepak Giri',
+      title: `${name} ${statusEmoji}`,
       logo: {
-        alt: 'Deepak Giri\'s Logo',
+        alt: `${name}\'s Logo`,
         src: 'img/deepakgiri.svg',
       },
       links: [
         { label: 'Blog', position: 'left', to: 'blog' },
-        { label: 'Contact', position: 'left', href: 'mailto:contact@dpkg.in?subject=Mail from dpkg.in homepage', className: 'contact-link' },
-        { label: 'GitHub', position: 'right', href: 'https://github.com/dpkg/dpkg.github.io'},
+        { label: 'Contact', position: 'left', href: `mailto:${email}?subject=Mail from ${name}'s homepage`, className: 'contact-link' },
+        { label: 'GitHub', position: 'right', href: `https://github.com/${config.gitHub.user}/${config.gitHub.user}.github.io/tree/develop`},
       ],
     },
     footer: {
@@ -29,11 +29,11 @@ module.exports = {
           items: [
             {
               label: 'LinkedIn',
-              href: urls.LinkedIn,
+              href: urls.linkedIn,
             },
             {
               label: 'GitHub',
-              href: urls.GitHubUser
+              href: urls.gitHubUser
             },
             {
               label: 'Blog',
@@ -50,11 +50,11 @@ module.exports = {
           items: [
             {
               label: 'Twitter',
-              href: urls.Twitter,
+              href: urls.twitter,
             },
             {
               label: 'Instagram',
-              href: urls.Instagram,
+              href: urls.instagram,
             },
             // {
             //   label: 'YouTube',
@@ -66,13 +66,17 @@ module.exports = {
           title: 'Recommended',
           items: [
             {
-              label: 'MKBHD @ YouTube',
+              label: 'MKBHD 👨🏿‍💻',
               to: 'https://www.youtube.com/user/marquesbrownlee/videos',
+            },
+            {
+              label: 'Prateek Kuhad 📻',
+              to: 'https://www.youtube.com/user/prateekkuhadmusic/videos'
             }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Deepak Giri &nbsp;&nbsp;|&nbsp;&nbsp; Powered by Docusaurus`,
+      copyright: `Copyright © ${new Date().getFullYear()} ${name} &nbsp;&nbsp;|&nbsp;&nbsp; Powered by Docusaurus`,
     },
   },
   presets: [
@@ -82,7 +86,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: urls.GitHubPagesDocusaurusBlogEditBase,
+          editUrl: urls.gitHubPagesDocusaurusBlogEditBase,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

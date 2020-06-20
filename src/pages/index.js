@@ -5,13 +5,13 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import { urls } from '../../personal.config.json';
+import { urls, email, name } from '../../personal.config.json';
 
 const features = [
   {
     title: <>Twitter</>,
     imageUrl: 'img/twitter.svg',
-    url: urls.Twitter,
+    url: urls.twitter,
     description: (
       <>
         Not a regular tweeter, but if you want to follow my occasional updates.
@@ -21,7 +21,7 @@ const features = [
   {
     title: <>LinkedIn</>,
     imageUrl: 'img/linkedin.svg',
-    url: urls.LinkedIn,
+    url: urls.linkedIn,
     description: (
       <>
         Check me out on here to find out more about my professional background
@@ -32,7 +32,7 @@ const features = [
   {
     title: <>GitHub</>,
     imageUrl: 'img/github.svg',
-    url: urls.GitHubUser,
+    url: urls.gitHubUser,
     description: (
       <>
         You'll not find too many contributions on my public profile,
@@ -43,11 +43,11 @@ const features = [
   {
     title: <>Telegram</>,
     imageUrl: 'img/telegram.svg',
-    url: urls.Telegram,
+    url: urls.telegram,
     description: (
       <>
         If you want to reach me instantly.
-        Or if you'd like to email instead, send to <code>contact@dpkg.in</code>.
+        Or if you'd like to email instead, send to <code>{email}</code>.
       </>
     )
   }
@@ -85,7 +85,7 @@ function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Deepak Giri's Personal Website">
+      description={`${name}'s Personal Website`}>
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
