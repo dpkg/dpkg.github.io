@@ -2,7 +2,7 @@ const { urls } = require('./personal.config.json');
 
 module.exports = {
   title: 'Deepak Giri',
-  tagline: 'Find out more about me below',
+  tagline: 'The perfect place to find out more about me',
   url: 'https://dpkg.in',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -71,7 +71,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Deepak Giri. Built with Docusaurus v2.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Deepak Giri &nbsp;&nbsp;|&nbsp;&nbsp; Built with Docusaurus.v2`,
     },
   },
   presets: [
