@@ -1,3 +1,5 @@
+const { urls } = require('./personal.config.json');
+
 module.exports = {
   title: 'Deepak Giri',
   tagline: 'Find out more about me below',
@@ -11,7 +13,7 @@ module.exports = {
       title: 'Deepak Giri',
       logo: {
         alt: 'Deepak Giri\'s Logo',
-        src: 'img/logo.svg',
+        src: 'img/deepakgiri.svg',
       },
       links: [
         { label: 'Blog', position: 'left', to: 'blog' },
@@ -26,11 +28,11 @@ module.exports = {
           items: [
             {
               label: 'LinkedIn',
-              href: 'https://linkedin.com/in/deepakgiri/',
+              href: urls.LinkedIn,
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/dpkg'
+              href: urls.GitHub
             },
             {
               label: 'Blog',
@@ -47,15 +49,15 @@ module.exports = {
           items: [
             {
               label: 'Twitter',
-              href: 'https://twitter.com/dpkg0',
+              href: urls.Twitter,
             },
             {
               label: 'Instagram',
-              href: 'https://instagr.am/dpkg',
+              href: urls.Instagram,
             },
             // {
             //   label: 'YouTube',
-            //   href: 'https://youtube.com/+DeepakGiri'
+            //   href: urls.YouTube
             // }
           ],
         },
@@ -79,13 +81,12 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/dpkg/dpkg.github.io.source/edit/master/',
+          editUrl: urls.GitHubBlogEditBase,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
-  ],
+  ]
 };
