@@ -47,6 +47,7 @@ const features = [
     description: (
       <>
         If you want to reach me instantly.
+        Or if you'd like to email instead, send to <code>contact@dpkg.in</code>.
       </>
     )
   }
