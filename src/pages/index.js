@@ -32,7 +32,7 @@ const features = [
   {
     title: <>GitHub</>,
     imageUrl: 'img/github.svg',
-    url: urls.GitHub,
+    url: urls.GitHubUser,
     description: (
       <>
         You'll not find too many contributions on my public profile,
@@ -59,12 +59,21 @@ function Feature({imageUrl, title, description, url}) {
     <div className={classnames('col col--3', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-            <a href={url || '#'} target={url ? '_blank' : '_self'}>
+          {!!url
+            ? <a href={url} target="_blank">
                 <img className={styles.featureImage} src={imgUrl} alt={title} />
-            </a>
+              </a>
+            : <img className={styles.featureImage} src={imgUrl} alt={title} />}
         </div>
       )}
-      <h3>{title}</h3>
+      <h3>
+        {!!url
+          ? <a href={url} target="_blank">
+            {title}
+            </a>
+          : {title}
+        }
+      </h3>
       <p>{description}</p>
     </div>
   );

@@ -33,7 +33,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: urls.GitHub
+              href: urls.GitHubUser
             },
             {
               label: 'Blog',
@@ -82,7 +82,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: urls.GitHubBlogEditBase,
+          editUrl: urls.GitHubPagesDocusaurusBlogEditBase,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

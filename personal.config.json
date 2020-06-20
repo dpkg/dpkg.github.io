@@ -1,7 +1,10 @@
 {
+  "name": "Deepak Giri",
   "urls": {
-    "GitHub": "https://github.com/dpkg",
-    "GitHubBlogEditBase": "https://github.com/dpkg/dpkg.github.io.source/edit/master/",
+    "Home": "https://dpkg.in",
+    "GitHubUser": "https://github.com/dpkg",
+    "GitHubPages": "https://github.com/dpkg/dpkg.github.io",
+    "GitHubPagesDocusaurusBlogEditBase": "https://github.com/dpkg/dpkg.github.io.source/edit/master/",
     "LinkedIn": "https://linkedin.com/in/deepakgiri/",
     "Twitter": "https://twitter.com/dpkg0",
     "Instagram": "https://instagr.am/dpkg",
