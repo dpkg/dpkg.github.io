@@ -4,7 +4,7 @@ module.exports = {
   title: 'Deepak Giri',
   tagline: 'The perfect place to find out more about me',
   url: 'https://dpkg.github.io',
-  baseUrl: '/dpkg.github.io/',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'dpkg', // Usually your GitHub org/user name.
   projectName: 'dpkg.github.io', // Usually your repo name.
