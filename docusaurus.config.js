@@ -1,17 +1,17 @@
 module.exports = {
   title: 'Deepak Giri',
-  tagline: 'The tagline of my site',
+  tagline: 'Find out more about me below',
   url: 'https://dpkg.in',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'dpkg', // Usually your GitHub org/user name.
-  projectName: 'dpkg.github.io', // Usually your repo name.
+  projectName: 'dpkg.github.io.source', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Deepak Giri',
       logo: {
-        alt: 'Deepak Giri',
-        src: 'img/dg.png',
+        alt: 'Deepak Giri\'s Logo',
+        src: 'img/logo.svg',
       },
       links: [
         {
@@ -22,7 +22,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/dpkg/dpkg.github.io',
           label: 'GitHub',
           position: 'right',
         },
