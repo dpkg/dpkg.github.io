@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{106:function(n){n.exports=JSON.parse('{"allTagsPath":"/dpkg.github.io/blog/tags","slug":"cvent","name":"cvent","count":1,"permalink":"/dpkg.github.io/blog/tags/cvent"}')}}]);
