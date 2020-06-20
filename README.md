@@ -1,5 +1,7 @@
-# dpkg.github.io.source
-Docusaurus Source for dpkg.github.io.
+![publish](https://github.com/dpkg/dpkg.github.io/workflows/publish/badge.svg)
+
+# dpkg.github.io
+Docusaurus Source for <code>dpkg.github.io</code>.
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
