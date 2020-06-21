@@ -76,7 +76,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ${name} &nbsp;&nbsp;|&nbsp;&nbsp; Powered by Docusaurus`,
+      copyright: `Copyright © ${new Date().getFullYear()} ${name}<br /><span class="docusaurus-footer">Powered by Docusaurus</span>`,
     },
   },
   presets: [
