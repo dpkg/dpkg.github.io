@@ -24,8 +24,12 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.personal-footer {
+  /*color: #749bc4;*/
+}
 .docusaurus-footer {
   font-size: 0.7rem;
+  color: #749bc4;
 }
 
 .contact-link {

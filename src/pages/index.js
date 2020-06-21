@@ -24,8 +24,8 @@ const features = [
     url: urls.linkedIn,
     description: (
       <>
-        Check me out on here to find out more about my professional background
-        and the kind of work I have been doing.
+        Check me out here to find more about my credentials and professional background
+        and the kind of work I do.
       </>
     )
   },
@@ -36,7 +36,7 @@ const features = [
     description: (
       <>
         You'll not find too many contributions on my public profile,
-        I mostly commit behind my corporate organizational accounts.
+        I mostly commit behind my organization's corporate accounts.
       </>
     )
   },
@@ -47,7 +47,7 @@ const features = [
     description: (
       <>
         If you want to reach me instantly.
-        Or if you'd like to email instead, send to <code>{email}</code>.
+        If you'd like to email instead, send to <code>{email}</code>.
       </>
     )
   }

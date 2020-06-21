@@ -9,6 +9,11 @@ module.exports = {
   organizationName: config.gitHub.user, // Usually your GitHub org/user name.
   projectName: `${config.gitHub.user}.github.io`, // Usually your repo name.
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'UA-59474078-1',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
     navbar: {
       title: `${name} ${statusEmoji}`,
       logo: {
@@ -76,7 +81,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ${name}<br /><span class="docusaurus-footer">Powered by Docusaurus</span>`,
+      copyright: `<span class="personal-footer">Copyright © ${new Date().getFullYear()} ${name}</span><br/><span class="docusaurus-footer">Powered by Docusaurus</span>`,
     },
   },
   presets: [
