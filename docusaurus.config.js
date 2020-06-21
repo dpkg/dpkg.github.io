@@ -1,4 +1,4 @@
-const { name, email, statusEmoji, urls, config } = require('./personal.config.json');
+const { name, email, statusEmoji, urls, config, recommended } = require('./personal.config.json');
 
 module.exports = {
   title: name,
@@ -69,16 +69,7 @@ module.exports = {
         },
         {
           title: 'Recommended',
-          items: [
-            {
-              label: 'MKBHD 👨🏿‍💻',
-              to: 'https://www.youtube.com/user/marquesbrownlee/videos',
-            },
-            {
-              label: 'Prateek Kuhad 📻',
-              to: 'https://www.youtube.com/user/prateekkuhadmusic/videos'
-            }
-          ],
+          items: recommended || [],
         },
       ],
       copyright: `<span class="personal-footer">Copyright © ${new Date().getFullYear()} ${name}</span><br/><span class="docusaurus-footer">Powered by Docusaurus</span>`,
