@@ -96,7 +96,13 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
-    ],
+        // Will be passed to @docusaurus/plugin-content-sitemap
+        sitemap: {
+          cacheTime: 600 * 1000, // 600 sec - cache purge period
+          changefreq: 'weekly',
+          priority: 0.5,
+        }
+      }
+    ]
   ]
 };
