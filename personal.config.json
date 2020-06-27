@@ -12,6 +12,16 @@
     "telegram": "https://t.me/dpkg0",
     "youTube": "https://youtube.com/+DeepakGiri"
   },
+  "recommended": [
+    {
+      "label": "MKBHD 👨🏿‍💻",
+      "to": "https://www.youtube.com/user/marquesbrownlee/videos"
+    },
+    {
+      "label": "Prateek Kuhad 🎧",
+      "to": "https://www.youtube.com/user/prateekkuhadmusic/videos"
+    }
+  ],
   "config": {
     "gitHub": {
       "user": "dpkg"

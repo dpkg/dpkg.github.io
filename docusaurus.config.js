@@ -1,9 +1,10 @@
-const { name, email, statusEmoji, urls, config } = require('./personal.config.json');
+const { name, email, statusEmoji, urls, config, recommended } = require('./personal.config.json');
 
 module.exports = {
   title: name,
   tagline: 'The perfect place to find out more about me',
-  url: `https://${config.gitHub.user}.github.io`,
+  //url: `https://${config.gitHub.user}.github.io`,
+  url: urls.home,
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: config.gitHub.user, // Usually your GitHub org/user name.
@@ -69,16 +70,7 @@ module.exports = {
         },
         {
           title: 'Recommended',
-          items: [
-            {
-              label: 'MKBHD 👨🏿‍💻',
-              to: 'https://www.youtube.com/user/marquesbrownlee/videos',
-            },
-            {
-              label: 'Prateek Kuhad 📻',
-              to: 'https://www.youtube.com/user/prateekkuhadmusic/videos'
-            }
-          ],
+          items: recommended || [],
         },
       ],
       copyright: `<span class="personal-footer">Copyright © ${new Date().getFullYear()} ${name}</span><br/><span class="docusaurus-footer">Powered by Docusaurus</span>`,
