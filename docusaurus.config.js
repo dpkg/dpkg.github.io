@@ -3,7 +3,8 @@ const { name, email, statusEmoji, urls, config, recommended } = require('./perso
 module.exports = {
   title: name,
   tagline: 'The perfect place to find out more about me',
-  url: `https://${config.gitHub.user}.github.io`,
+  //url: `https://${config.gitHub.user}.github.io`,
+  url: urls.home,
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: config.gitHub.user, // Usually your GitHub org/user name.
