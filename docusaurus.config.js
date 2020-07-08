@@ -1,4 +1,4 @@
-const { name, email, statusEmoji, urls, config, recommended } = require('./personal.config.json');
+const { name, email, statusEmoji, urls, config, recommended } = require('./persona.config.json');
 
 module.exports = {
   title: name,

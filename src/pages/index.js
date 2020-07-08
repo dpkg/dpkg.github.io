@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import { urls, email, name } from '../../personal.config.json';
+import { urls, email, name } from '../../persona.config.json';
 
 const features = [
   {
