@@ -23,8 +23,8 @@ module.exports = {
       },
       links: [
         { label: 'Blog', position: 'left', to: 'blog' },
-        { label: 'Contact', position: 'left', href: `mailto:${email}?subject=Mail from ${name}'s homepage`, className: 'contact-link' },
-        { label: 'GitHub', position: 'right', href: `https://github.com/${config.gitHub.user}/${config.gitHub.user}.github.io/tree/develop`},
+        { label: 'Contact', position: 'right', href: `mailto:${email}?subject=Mail from ${name}'s homepage`, className: 'contact-link' },
+        { label: 'GitHub', position: 'right', href: `https://github.com/${config.gitHub.user}/${config.gitHub.user}.github.io/tree/develop`, className: 'contact-link'},
       ],
     },
     footer: {
@@ -73,7 +73,7 @@ module.exports = {
           items: recommended || [],
         },
       ],
-      copyright: `<span class="personal-footer">Copyright © ${new Date().getFullYear()} ${name}</span><br/><span class="docusaurus-footer">Powered by Docusaurus</span>`,
+      copyright: `<span class="personal-footer">Copyright © ${new Date().getFullYear()} ${name}</span><br/><span class="docusaurus-footer">Powered by GitHub & Docusaurus</span>`,
     },
   },
   presets: [
