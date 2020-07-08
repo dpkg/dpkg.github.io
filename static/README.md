@@ -3,7 +3,7 @@ This is the personal website of Deepak Giri.
 
 ### Source
 The source code is located in the <code>[develop](https://github.com/dpkg/dpkg.github.io/tree/develop)</code> branch of this repo.
-A GitHub workflow has been setup to automatically build and publish the
+A GitHub [workflow](https://github.com/dpkg/dpkg.github.io/actions) has been setup to automatically build and publish the
 <code>[develop](https://github.com/dpkg/dpkg.github.io/tree/develop)</code> branch
 whenever there's a change detected in that branch.
 
