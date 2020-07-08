@@ -1,6 +1,7 @@
 {
   "name": "Deepak Giri",
   "email": "contact@dpkg.in",
+  "image": "https://en.gravatar.com/userimage/8733330/02aec2999853cbfbd27de0100acf50ff.jpg?size=300",
   "statusEmoji": "\uD83C\uDDEE\uD83C\uDDF3",
   "urls": {
     "home": "https://dpkg.in",
@@ -25,6 +26,11 @@
   "config": {
     "gitHub": {
       "user": "dpkg"
+    },
+    "seo": {
+      "keywords": ["deepak", "giri", "delhi", "new delhi", "ncr", "gurugram", "gurgaon", "india", "bengali", "engineer",
+        "software engineer", "principal engineer", "cvent", "cvent india", "lbsim", "raisina", "rbs", "raisina bengali school"],
+      "avatar": "https://avatars1.githubusercontent.com/u/1250194?s=460&v=4"
     }
   }
 }

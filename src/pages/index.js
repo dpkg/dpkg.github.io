@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import { urls, email, name } from '../../persona.config.json';
+import { urls, email, name, image, config } from '../../persona.config.json';
 
 const features = [
   {
@@ -85,7 +85,9 @@ function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description={`${name}'s Personal Website`}>
+      description={`${name}'s Personal Website and Blog`}
+      image={image}
+      keywords={config.seo.keywords}>
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
