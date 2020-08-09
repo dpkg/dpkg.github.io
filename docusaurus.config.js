@@ -88,6 +88,10 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl: urls.gitHubPagesDocusaurusBlogEditBase,
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} ${name}`
+          }
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
