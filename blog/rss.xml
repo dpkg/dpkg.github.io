@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Deepak Giri Blog</title>
+        <link>https://dpkg.in/blog</link>
+        <description>Deepak Giri Blog</description>
+        <lastBuildDate>Sat, 20 Jun 2020 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <copyright>Copyright © 2020 Deepak Giri</copyright>
+        <item>
+            <title><![CDATA[Hello World]]></title>
+            <link>https://dpkg.in/blog/welcome</link>
+            <guid>welcome</guid>
+            <pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Deepak Giri's first blog post on his personal website https://dpkg.in]]></description>
+        </item>
+    </channel>
+</rss>
