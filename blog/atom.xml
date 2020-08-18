@@ -13,7 +13,7 @@
         <id>hp-laserjet-1020-macos-driver</id>
         <link href="https://dpkg.in/blog/hp-laserjet-1020-macos-driver"/>
         <updated>2020-08-17T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[TODO]]></summary>
+        <summary type="html"><![CDATA[Installing driver for the old/legacy HP LaserJet 1020 printer on your macOS version. The drivers aren't supported by Apple, but HP has a support page for a lot of their old printers.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
