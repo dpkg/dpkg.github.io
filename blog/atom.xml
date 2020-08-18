@@ -2,12 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dpkg.in/blog</id>
     <title>Deepak Giri Blog</title>
-    <updated>2020-06-20T00:00:00.000Z</updated>
+    <updated>2020-08-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dpkg.in/blog"/>
     <subtitle>Deepak Giri Blog</subtitle>
     <icon>https://dpkg.in/img/favicon.ico</icon>
     <rights>Copyright © 2020 Deepak Giri</rights>
+    <entry>
+        <title type="html"><![CDATA[Installing driver for HP LaserJet 1020 printer on macOS!]]></title>
+        <id>hp-laserjet-1020-macos-driver</id>
+        <link href="https://dpkg.in/blog/hp-laserjet-1020-macos-driver"/>
+        <updated>2020-08-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TODO]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
         <id>welcome</id>
