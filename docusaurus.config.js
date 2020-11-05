@@ -41,10 +41,10 @@ module.exports = {
               label: 'GitHub',
               href: urls.gitHubUser
             },
-            // {
-            //   label: 'Blog',
-            //   to: 'blog', // todo: can we redirect to professional tag?
-            // },
+            {
+              label: 'Tech Blog',
+              to: 'blog/tags/technology',
+            },
             // {
             //   label: 'Stack Overflow',
             //   href: 'https://stackoverflow.com/users/1384048/dpkg',
@@ -62,10 +62,10 @@ module.exports = {
               label: 'Twitter',
               href: urls.twitter,
             },
-            // {
-            //   label: 'Blog',
-            //   to: 'blog', // todo: can we redirect to social/personal tag?
-            // },
+            {
+              label: 'Not Tech',
+              to: 'blog/tags/general',
+            },
             // {
             //   label: 'YouTube',
             //   href: urls.YouTube

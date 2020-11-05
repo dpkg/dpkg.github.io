@@ -1,8 +1,8 @@
 {
   "name": "Deepak Giri",
-  "email": "contact@dpkg.in",
+  "email": "contact[at]dpkg.in",
   "image": "https://en.gravatar.com/userimage/8733330/02aec2999853cbfbd27de0100acf50ff.jpg?size=300",
-  "statusEmoji": "\uD83C\uDDEE\uD83C\uDDF3",
+  "statusEmoji": "",
   "urls": {
     "home": "https://dpkg.in",
     "gitHubUser": "https://github.com/dpkg",
@@ -16,11 +16,15 @@
   "recommended": [
     {
       "label": "MKBHD 👨🏿‍💻",
-      "to": "https://www.youtube.com/user/marquesbrownlee/videos"
+      "to": "https://www.youtube.com/user/marquesbrownlee"
+    },
+    {
+      "label": "The Main Squeeze \n\uD83C\uDFB8",
+      "to": "https://www.youtube.com/c/MainSqueezeMusic"
     },
     {
       "label": "Prateek Kuhad 🎧",
-      "to": "https://www.youtube.com/user/prateekkuhadmusic/videos"
+      "to": "https://www.youtube.com/user/prateekkuhadmusic"
     }
   ],
   "config": {
