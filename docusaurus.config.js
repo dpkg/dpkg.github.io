@@ -55,6 +55,9 @@ module.exports = {
           title: 'Social',
           items: [
             {
+              label: 'Strava',
+              href: urls.strava,
+            },{
               label: 'Instagram',
               href: urls.instagram,
             },
