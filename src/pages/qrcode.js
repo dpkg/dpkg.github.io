@@ -15,6 +15,41 @@ function isValidUrl(value) {
   }
 }
 
+function normalizeUrlForAnalytics(value) {
+  try {
+    const parsed = new URL(value);
+    return {
+      domain: parsed.hostname || 'unknown',
+      path: parsed.pathname || '/',
+      protocol: parsed.protocol.replace(':', '') || 'unknown',
+    };
+  } catch (error) {
+    return {
+      domain: 'invalid',
+      path: '/',
+      protocol: 'unknown',
+    };
+  }
+}
+
+function trackQrEvent(eventName, payload = {}) {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  if (process.env.NODE_ENV === 'development') {
+    // eslint-disable-next-line no-console
+    console.log('[GA DEBUG]', eventName, payload);
+    return;
+  }
+
+  if (!window.gtag) {
+    return;
+  }
+
+  window.gtag('event', eventName, payload);
+}
+
 export default function QrCodeStylingGenerator() {
   const containerRef = useRef(null);
 
@@ -56,6 +91,8 @@ export default function QrCodeStylingGenerator() {
         return;
       }
 
+      const analyticsData = normalizeUrlForAnalytics(targetUrl);
+
       try {
         const qrCode = new QRCodeStyling({
           width: 420,
@@ -91,6 +128,12 @@ export default function QrCodeStylingGenerator() {
 
         containerRef.current.innerHTML = '';
         qrCode.append(containerRef.current);
+        trackQrEvent('qr_generate', {
+          source: 'qrcode-page',
+          domain: analyticsData.domain,
+          path: analyticsData.path,
+          protocol: analyticsData.protocol,
+        });
         qrCode.download({ name: 'deepak-qrcode', extension: 'svg' });
       } catch (error) {
         window.alert(`Unable to generate the QR code: ${error && error.message ? error.message : error}`);
