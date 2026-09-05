@@ -34,3 +34,7 @@ $ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Upgrade notes
+
+The repository has a documented modernization plan for the legacy Docusaurus toolchain in [`docs/upgrade-plan.md`](docs/upgrade-plan.md). That plan covers the recommended Node version, Docusaurus upgrade path, and package-manager migration strategy.

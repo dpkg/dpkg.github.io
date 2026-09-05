@@ -22,7 +22,7 @@ export default function QrCodeGenerator() {
 
     let isMounted = true;
 
-    const askForUrl = () => {
+    const askForUrl = function () {
       const input = window.prompt('Enter a valid URL to generate a QR code SVG:');
 
       if (input === null) {
@@ -39,7 +39,7 @@ export default function QrCodeGenerator() {
       return trimmed;
     };
 
-    const handleGeneration = async () => {
+    const handleGeneration = function () {
       if (!isMounted) {
         return;
       }
@@ -53,37 +53,44 @@ export default function QrCodeGenerator() {
         return;
       }
 
-      try {
-        const QRCode = (await import('qrcode')).default;
-        const rawSvgString = await QRCode.toString(targetUrl, {
-          type: 'svg',
-          errorCorrectionLevel: 'H',
-          margin: 2,
-          width: 400,
-          color: {
-            dark: '#000000',
-            light: '#ffffff',
-          },
+      import('qrcode')
+        .then(function (module) {
+          const QRCode = module.default || module;
+          return QRCode.toString(targetUrl, {
+            type: 'svg',
+            errorCorrectionLevel: 'H',
+            margin: 2,
+            width: 400,
+            color: {
+              dark: '#000000',
+              light: '#ffffff',
+            },
+          });
+        })
+        .then(function (rawSvgString) {
+          if (!isMounted) {
+            return;
+          }
+
+          const blob = new Blob([rawSvgString], { type: 'image/svg+xml;charset=utf-8' });
+          const blobUrl = URL.createObjectURL(blob);
+          const downloadLink = document.createElement('a');
+
+          downloadLink.href = blobUrl;
+          downloadLink.download = 'qrcode.svg';
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          document.body.removeChild(downloadLink);
+          URL.revokeObjectURL(blobUrl);
+        })
+        .catch(function (error) {
+          window.alert(`Unable to generate the QR code: ${error && error.message ? error.message : error}`);
         });
-
-        const blob = new Blob([rawSvgString], { type: 'image/svg+xml;charset=utf-8' });
-        const blobUrl = URL.createObjectURL(blob);
-        const downloadLink = document.createElement('a');
-
-        downloadLink.href = blobUrl;
-        downloadLink.download = 'qrcode.svg';
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-        URL.revokeObjectURL(blobUrl);
-      } catch (error) {
-        window.alert(`Unable to generate the QR code: ${error && error.message ? error.message : error}`);
-      }
     };
 
     handleGeneration();
 
-    return () => {
+    return function () {
       isMounted = false;
     };
   }, []);
