@@ -84,6 +84,16 @@ pnpm install
 pnpm build
 ```
 
+## Temporary security overrides
+
+The current Docusaurus 3.x dependency tree still pulls in a few transitive packages with published security advisories. To keep the site buildable and deployable while waiting for upstream fixes, the repo uses temporary package overrides.
+
+These are intentionally limited to the vulnerable transitive packages most directly implicated by the audit output.
+
+- `resolutions` and `overrides` are kept in `package.json`
+- they should be removed as soon as the upstream Docusaurus dependency graph is patched
+- this is a temporary bridge, not a long-term solution
+
 ## Important notes
 
 - The project should be treated as a legacy Docusaurus site that needs a compatibility upgrade, not as a modern app that can be upgraded in-place without planning.
