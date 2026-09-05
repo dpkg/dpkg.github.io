@@ -83,6 +83,10 @@ module.exports = {
               label: 'Markdown to HTML Preview',
               to: 'markdown-preview',
             },
+            {
+              label: 'JSON Formatter',
+              to: 'json-formatter',
+            },
 //            {
 //              label: 'Plain QR Code',
 //              to: 'qrcode-plain',
