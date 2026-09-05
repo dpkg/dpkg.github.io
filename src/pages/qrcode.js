@@ -148,7 +148,7 @@ export default function QrCodeStylingGenerator() {
   }, []);
 
   return (
-    <Layout title="Branded QR Code Generator" description="Generate a QR code with a custom Deepak Giri logo in the center and download it as SVG.">
+    <Layout title="Free QR Code Generator" description="Generate a QR code for a URL and download it as an SVG.">
       <div
         style={{
           padding: '6rem 2rem',
