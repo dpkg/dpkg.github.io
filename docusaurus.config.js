@@ -79,6 +79,10 @@ module.exports = {
               label: 'QR Code Gen',
               to: 'qrcode',
             },
+            {
+              label: 'Markdown to HTML Preview',
+              to: 'markdown-preview',
+            },
 //            {
 //              label: 'Plain QR Code',
 //              to: 'qrcode-plain',
