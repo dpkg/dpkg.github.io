@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdpkg_github_io||=[]).push([[331],{9178(a){a.exports=JSON.parse('{"tag":{"label":"general","permalink":"/blog/tags/general","allTagsPath":"/blog/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/general","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

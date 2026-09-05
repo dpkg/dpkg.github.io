@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdpkg_github_io||=[]).push([[729],{888(t){t.exports=JSON.parse('{"tag":{"label":"cvent","permalink":"/blog/tags/cvent","allTagsPath":"/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/cvent","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

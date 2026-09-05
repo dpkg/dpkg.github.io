@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdpkg_github_io||=[]).push([[498],{4317(a){a.exports=JSON.parse('{"tag":{"label":"macos","permalink":"/blog/tags/macos","allTagsPath":"/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/macos","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

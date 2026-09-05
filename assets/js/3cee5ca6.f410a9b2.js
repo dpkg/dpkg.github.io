@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdpkg_github_io||=[]).push([[262],{6139(t){t.exports=JSON.parse('{"tag":{"label":"printer","permalink":"/blog/tags/printer","allTagsPath":"/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/printer","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

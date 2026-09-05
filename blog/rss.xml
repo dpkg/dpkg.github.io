@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Deepak Giri Blog</title>
         <link>https://dpkg.in/blog</link>
@@ -7,20 +7,51 @@
         <lastBuildDate>Mon, 17 Aug 2020 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
         <copyright>Copyright © 2026 Deepak Giri</copyright>
         <item>
             <title><![CDATA[Installing HP LaserJet 1020 driver on macOS!]]></title>
-            <link>https://dpkg.in/blog/hp-laserjet-1020-macos-driver</link>
-            <guid>hp-laserjet-1020-macos-driver</guid>
+            <link>https://dpkg.in/blog/2020/08/17/hp-laserjet-old-macos-driver</link>
+            <guid>https://dpkg.in/blog/2020/08/17/hp-laserjet-old-macos-driver</guid>
             <pubDate>Mon, 17 Aug 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Installing driver for the old/legacy HP LaserJet 1020 printer on your macOS version. The drivers aren't supported by Apple, but HP has a support page for a lot of their old printers.]]></description>
+            <content:encoded><![CDATA[<p>Apple used to provide drivers for download for some old models of HP LaserJet (and other) printers.
+But it has now stopped supporting that, and you can now instead go to HPs <a href="https://support.hp.com/us-en/drivers/selfservice/hp-laserjet-1022-printer-series/439424" target="_blank" rel="noopener noreferrer" class="">website</a>
+to download the drivers for some of their older models or LaserJet printers that are compatible with macOS operating systems.</p>
+<p align="center"><img alt="hp laserjet 1020 printer" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c03009416.png"></p>
+<p>You can click <a href="https://support.hp.com/us-en/drivers/printers" target="_blank" rel="noopener noreferrer" class="">this link</a> to get to the HP support page
+where they've listed the supported printer models and also the driver downloads.</p>
+<p>I have an old HP LaserJet 1020. Although it's not listed in the page above, it still works with the 1022 driver, that is listed
+(I'm guessing because they're the same series).</p>
+<p>I'm listing the steps on how to install the LaserJet 1020 printer on macOS Catalina (10.15.6).</p>
+<ol>
+<li class="">Go to <a href="https://support.hp.com/us-en/drivers/selfservice/hp-laserjet-1022-printer-series/439424" target="_blank" rel="noopener noreferrer" class="">this page</a> and download the driver based on the macOS version you have.</li>
+<li class="">After the download has finished, open the image file. Then double click on the content of the image file to install the drivers.</li>
+<li class="">Once the driver installation has finished, connect your printer to your macbook and then turn it on.</li>
+<li class="">Open "System Preferences", go to "Printers &amp; Scanners", and then click the add (+) button below the list of printers on the left side.</li>
+<li class="">Your printers should shop up in the Add window. Click it.</li>
+<li class="">Now select the "Use" dropdown field and click "Select Printer Software" option. Search for your printer version (for 1020, search for 1022 and select that).</li>
+<li class="">Press Add. And that's it.</li>
+</ol>
+<p>Your printer should now be all setup and ready to print! You can print a test page to confirm
+(I'll suggest though directly printing what you want to print as a test, to avoid printing a fake page and wasting a sheet of paper).</p>]]></content:encoded>
+            <category>deepakgiri</category>
+            <category>macos</category>
+            <category>printer</category>
+            <category>general</category>
         </item>
         <item>
             <title><![CDATA[Hello World]]></title>
-            <link>https://dpkg.in/blog/welcome</link>
-            <guid>welcome</guid>
+            <link>https://dpkg.in/blog/2020/06/20/hello-world</link>
+            <guid>https://dpkg.in/blog/2020/06/20/hello-world</guid>
             <pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Deepak Giri's first blog post on his personal website https://dpkg.in]]></description>
+            <content:encoded><![CDATA[<p>Welcome to my personal website <code>dpkg.in</code>!</p>]]></content:encoded>
+            <category>deepakgiri</category>
+            <category>cvent</category>
+            <category>welcome</category>
+            <category>hello</category>
+            <category>general</category>
         </item>
     </channel>
 </rss>
