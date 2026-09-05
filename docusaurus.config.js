@@ -76,16 +76,20 @@ module.exports = {
           title: 'Tools',
           items: [
             {
-              label: 'QR Code Gen',
-              to: 'qrcode',
-            },
-            {
-              label: 'Markdown to HTML Preview',
+              label: 'Markdown Preview',
               to: 'markdown-preview',
             },
             {
-              label: 'JSON Formatter',
+              label: 'JSON Format',
               to: 'json-formatter',
+            },
+//            {
+//              label: 'ASCII Art',
+//              to: 'ascii-art',
+//            },
+            {
+              label: 'QR Code Gen',
+              to: 'qrcode',
             },
 //            {
 //              label: 'Plain QR Code',
