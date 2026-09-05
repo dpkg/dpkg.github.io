@@ -10,18 +10,13 @@ module.exports = {
   organizationName: config.gitHub.user, // Usually your GitHub org/user name.
   projectName: `${config.gitHub.user}.github.io`, // Usually your repo name.
   themeConfig: {
-    googleAnalytics: {
-      trackingID: 'UA-59474078-1',
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
     navbar: {
       title: `${name} ${statusEmoji}`,
       logo: {
         alt: `${name}\'s Logo`,
         src: 'img/deepakgiri.svg',
       },
-      links: [
+      items: [
         { label: 'Blog', position: 'left', to: 'blog' },
         { label: 'Contact', position: 'right', href: `mailto:${email}?subject=Mail from ${name}'s homepage`, className: 'contact-link' },
         { label: 'GitHub', position: 'right', href: `https://github.com/${config.gitHub.user}/${config.gitHub.user}.github.io/tree/develop`, className: 'contact-link'},
@@ -43,7 +38,8 @@ module.exports = {
             },
             {
               label: 'Tech Blog',
-              to: 'blog/tags/technology',
+              to: 'blog',
+              // to: 'blog/tags/technology',
             },
             // {
             //   label: 'Stack Overflow',
@@ -87,6 +83,10 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        googleAnalytics: {
+          trackingID: 'UA-59474078-1',
+          anonymizeIP: true,
+        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -101,7 +101,6 @@ module.exports = {
         },
         // Will be passed to @docusaurus/plugin-content-sitemap
         sitemap: {
-          cacheTime: 600 * 1000, // 600 sec - cache purge period
           changefreq: 'weekly',
           priority: 0.5,
         }
