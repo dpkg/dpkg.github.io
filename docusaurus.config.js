@@ -9,6 +9,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: config.gitHub.user, // Usually your GitHub org/user name.
   projectName: `${config.gitHub.user}.github.io`, // Usually your repo name.
+  deploymentBranch: 'master',
   themeConfig: {
     navbar: {
       title: `${name} ${statusEmoji}`,
