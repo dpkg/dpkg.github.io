@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import Layout from '@theme/Layout';
-import QRCodeStyling from 'qr-code-styling';
 
 function isValidUrl(value) {
   if (!value || typeof value !== 'string') {
@@ -15,7 +14,7 @@ function isValidUrl(value) {
   }
 }
 
-export default function QrCodeStylingGenerator() {
+export default function QrCodePlainGenerator() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -26,7 +25,7 @@ export default function QrCodeStylingGenerator() {
     let isMounted = true;
 
     const askForUrl = function () {
-      const input = window.prompt('Enter a valid URL to generate a branded QR code SVG:');
+      const input = window.prompt('Enter a valid URL to generate a QR code SVG:');
 
       if (input === null) {
         return null;
@@ -56,45 +55,41 @@ export default function QrCodeStylingGenerator() {
         return;
       }
 
-      try {
-        const qrCode = new QRCodeStyling({
-          width: 420,
-          height: 420,
-          type: 'svg',
-          data: targetUrl,
-          margin: 2,
-          qrOptions: {
-            typeNumber: 0,
-            mode: 'Byte',
+      import('qrcode')
+        .then(function (module) {
+          const QRCode = module.default || module;
+          return QRCode.toString(targetUrl, {
+            type: 'svg',
             errorCorrectionLevel: 'H',
-          },
-          image: '/img/deepakgiri.svg',
-          imageOptions: {
-            hideBackgroundDots: true,
-            imageSize: 0.4,
-            margin: 10,
-          },
-          dotsOptions: {
-            color: '#111827',
-            type: 'square',
-          },
-          backgroundOptions: {
-            color: '#FFFF00',
-          },
-          cornersSquareOptions: {
-            type: 'square',
-          },
-          cornersDotOptions: {
-            type: 'square',
-          },
-        });
+            margin: 2,
+            width: 400,
+            color: {
+              dark: '#000000',
+              light: '#ffffff',
+            },
+          });
+        })
+        .then(function (rawSvgString) {
+          if (!isMounted || !containerRef.current) {
+            return;
+          }
 
-        containerRef.current.innerHTML = '';
-        qrCode.append(containerRef.current);
-        qrCode.download({ name: 'deepak-qrcode', extension: 'svg' });
-      } catch (error) {
-        window.alert(`Unable to generate the QR code: ${error && error.message ? error.message : error}`);
-      }
+          containerRef.current.innerHTML = rawSvgString;
+
+          const blob = new Blob([rawSvgString], { type: 'image/svg+xml;charset=utf-8' });
+          const blobUrl = URL.createObjectURL(blob);
+          const downloadLink = document.createElement('a');
+
+          downloadLink.href = blobUrl;
+          downloadLink.download = 'qrcode.svg';
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          document.body.removeChild(downloadLink);
+          URL.revokeObjectURL(blobUrl);
+        })
+        .catch(function (error) {
+          window.alert(`Unable to generate the QR code: ${error && error.message ? error.message : error}`);
+        });
     };
 
     handleGeneration();
@@ -105,7 +100,7 @@ export default function QrCodeStylingGenerator() {
   }, []);
 
   return (
-    <Layout title="Branded QR Code Generator" description="Generate a QR code with a custom Deepak Giri logo in the center and download it as SVG.">
+    <Layout title="QR Code Generator" description="Generate a QR code for a URL and download it as an SVG.">
       <div
         style={{
           padding: '6rem 2rem',
@@ -116,10 +111,10 @@ export default function QrCodeStylingGenerator() {
         }}
       >
         <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--ifm-color-primary)' }}>
-          Branded QR Code Generator
+          QR Code Generator (Plain)
         </h1>
         <p style={{ opacity: 0.7, fontSize: '1.1rem', marginBottom: '2rem' }}>
-          A browser prompt will ask for a URL, validate it, and generate a QR code with the Deepak Giri logo centered before downloading it as SVG.
+          A browser prompt will ask for a URL, validate it, generate the QR code inline, and download the SVG file.
         </p>
         <div
           ref={containerRef}
