@@ -111,10 +111,10 @@ export default function QrCodePlainGenerator() {
         }}
       >
         <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--ifm-color-primary)' }}>
-          QR Code Generator (Plain)
+          QR Code Generator
         </h1>
         <p style={{ opacity: 0.7, fontSize: '1.1rem', marginBottom: '2rem' }}>
-          A browser prompt will ask for a URL, validate it, generate the QR code inline, and download the SVG file.
+          A browser prompt will ask for a URL, validate it, and generate a QR code before downloading it as SVG.
         </p>
         <div
           ref={containerRef}

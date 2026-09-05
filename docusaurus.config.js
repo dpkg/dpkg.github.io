@@ -93,14 +93,19 @@ module.exports = {
       copyright: `<span class="personal-footer">Copyright © ${new Date().getFullYear()} ${name}</span><br/><span class="docusaurus-footer">Powered by GitHub & Docusaurus</span>`,
     },
   },
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-WVR5MF23DZ',
+        anonymizeIP: true,
+      },
+    ],
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
-        googleAnalytics: {
-          trackingID: 'UA-59474078-1',
-          anonymizeIP: true,
-        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
