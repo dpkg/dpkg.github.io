@@ -73,6 +73,19 @@ module.exports = {
           ],
         },
         {
+          title: 'Tools',
+          items: [
+            {
+              label: 'QR Code Gen',
+              to: 'qrcode',
+            },
+//            {
+//              label: 'Plain QR Code',
+//              to: 'qrcode-plain',
+//            },
+          ],
+        },
+        {
           title: 'Recommended',
           items: recommended || [],
         },
