@@ -11,12 +11,12 @@
         <copyright>Copyright © 2026 Deepak Giri</copyright>
         <item>
             <title><![CDATA[Installing HP LaserJet 1020 driver on macOS!]]></title>
-            <link>https://dpkg.in/blog/2020/08/17/hp-laserjet-old-macos-driver</link>
-            <guid>https://dpkg.in/blog/2020/08/17/hp-laserjet-old-macos-driver</guid>
+            <link>https://dpkg.in/blog/hp-laserjet-1020-macos-driver</link>
+            <guid>https://dpkg.in/blog/hp-laserjet-1020-macos-driver</guid>
             <pubDate>Mon, 17 Aug 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Installing driver for the old/legacy HP LaserJet 1020 printer on your macOS version. The drivers aren't supported by Apple, but HP has a support page for a lot of their old printers.]]></description>
-            <content:encoded><![CDATA[<p>Apple used to provide drivers for download for some old models of HP LaserJet (and other) printers.
-But it has now stopped supporting that, and you can now instead go to HPs <a href="https://support.hp.com/us-en/drivers/selfservice/hp-laserjet-1022-printer-series/439424" target="_blank" rel="noopener noreferrer" class="">website</a>
+            <content:encoded><![CDATA[<p>Apple used to provide drivers for download for some old models of HP LaserJet (and other) printers.</p>
+<p>But it has now stopped supporting that, and you can now instead go to HPs <a href="https://support.hp.com/us-en/drivers/selfservice/hp-laserjet-1022-printer-series/439424" target="_blank" rel="noopener noreferrer" class="">website</a>
 to download the drivers for some of their older models or LaserJet printers that are compatible with macOS operating systems.</p>
 <p align="center"><img alt="hp laserjet 1020 printer" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c03009416.png"></p>
 <p>You can click <a href="https://support.hp.com/us-en/drivers/printers" target="_blank" rel="noopener noreferrer" class="">this link</a> to get to the HP support page
@@ -42,8 +42,8 @@ where they've listed the supported printer models and also the driver downloads.
         </item>
         <item>
             <title><![CDATA[Hello World]]></title>
-            <link>https://dpkg.in/blog/2020/06/20/hello-world</link>
-            <guid>https://dpkg.in/blog/2020/06/20/hello-world</guid>
+            <link>https://dpkg.in/blog/hello-world</link>
+            <guid>https://dpkg.in/blog/hello-world</guid>
             <pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Deepak Giri's first blog post on his personal website https://dpkg.in]]></description>
             <content:encoded><![CDATA[<p>Welcome to my personal website <code>dpkg.in</code>!</p>]]></content:encoded>

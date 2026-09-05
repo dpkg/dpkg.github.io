@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdpkg_github_io||=[]).push([[947],{6600(t){t.exports=JSON.parse('{"authors":[{"name":"Deepak Giri","title":"Explorer","url":"https://github.com/dpkg","imageURL":"https://avatars1.githubusercontent.com/u/1250194?s=460&v=4","key":"deepak-giri","page":null,"count":2}]}')}}]);

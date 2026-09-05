@@ -10,12 +10,12 @@
     <rights>Copyright © 2026 Deepak Giri</rights>
     <entry>
         <title type="html"><![CDATA[Installing HP LaserJet 1020 driver on macOS!]]></title>
-        <id>https://dpkg.in/blog/2020/08/17/hp-laserjet-old-macos-driver</id>
-        <link href="https://dpkg.in/blog/2020/08/17/hp-laserjet-old-macos-driver"/>
+        <id>https://dpkg.in/blog/hp-laserjet-1020-macos-driver</id>
+        <link href="https://dpkg.in/blog/hp-laserjet-1020-macos-driver"/>
         <updated>2020-08-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Installing driver for the old/legacy HP LaserJet 1020 printer on your macOS version. The drivers aren't supported by Apple, but HP has a support page for a lot of their old printers.]]></summary>
-        <content type="html"><![CDATA[<p>Apple used to provide drivers for download for some old models of HP LaserJet (and other) printers.
-But it has now stopped supporting that, and you can now instead go to HPs <a href="https://support.hp.com/us-en/drivers/selfservice/hp-laserjet-1022-printer-series/439424" target="_blank" rel="noopener noreferrer" class="">website</a>
+        <content type="html"><![CDATA[<p>Apple used to provide drivers for download for some old models of HP LaserJet (and other) printers.</p>
+<p>But it has now stopped supporting that, and you can now instead go to HPs <a href="https://support.hp.com/us-en/drivers/selfservice/hp-laserjet-1022-printer-series/439424" target="_blank" rel="noopener noreferrer" class="">website</a>
 to download the drivers for some of their older models or LaserJet printers that are compatible with macOS operating systems.</p>
 <p align="center"><img alt="hp laserjet 1020 printer" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c03009416.png"></p>
 <p>You can click <a href="https://support.hp.com/us-en/drivers/printers" target="_blank" rel="noopener noreferrer" class="">this link</a> to get to the HP support page
@@ -45,8 +45,8 @@ where they've listed the supported printer models and also the driver downloads.
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
-        <id>https://dpkg.in/blog/2020/06/20/hello-world</id>
-        <link href="https://dpkg.in/blog/2020/06/20/hello-world"/>
+        <id>https://dpkg.in/blog/hello-world</id>
+        <link href="https://dpkg.in/blog/hello-world"/>
         <updated>2020-06-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Deepak Giri's first blog post on his personal website https://dpkg.in]]></summary>
         <content type="html"><![CDATA[<p>Welcome to my personal website <code>dpkg.in</code>!</p>]]></content>
