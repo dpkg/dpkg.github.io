@@ -148,7 +148,11 @@ export default function QrCodeStylingGenerator() {
   }, []);
 
   return (
-    <Layout title="Free QR Code Generator" description="Generate a QR code for a URL and download it as an SVG.">
+    <Layout
+      title="Free QR Code Generator"
+      description="Generate a QR code for a URL and download it as an SVG."
+      keywords={['qr code generator', 'free qr code', 'svg qr code', 'qr code', 'qrcode', 'qrcode generator']}
+    >
       <div
         style={{
           padding: '6rem 2rem',
