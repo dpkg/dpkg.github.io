@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import QRCodeStyling from 'qr-code-styling';
 
 function isValidUrl(value) {
