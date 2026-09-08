@@ -135,7 +135,7 @@ export default function QrCodeStylingGenerator() {
           path: analyticsData.path,
           protocol: analyticsData.protocol,
         });
-        qrCode.download({ name: 'deepak-qrcode', extension: 'svg' });
+        qrCode.download({ name: 'qrcode', extension: 'svg' });
       } catch (error) {
         window.alert(`Unable to generate the QR code: ${error && error.message ? error.message : error}`);
       }
