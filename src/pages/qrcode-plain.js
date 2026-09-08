@@ -60,7 +60,7 @@ export default function QrCodePlainGenerator() {
           const QRCode = module.default || module;
           return QRCode.toString(targetUrl, {
             type: 'svg',
-            errorCorrectionLevel: 'H',
+            errorCorrectionLevel: 'M',
             margin: 2,
             width: 400,
             color: {

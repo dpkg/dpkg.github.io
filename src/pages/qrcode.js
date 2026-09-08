@@ -103,7 +103,7 @@ export default function QrCodeStylingGenerator() {
           qrOptions: {
             typeNumber: 0,
             mode: 'Byte',
-            errorCorrectionLevel: 'H',
+            errorCorrectionLevel: 'M',
           },
           image: '/img/deepakgiri.svg',
           imageOptions: {
