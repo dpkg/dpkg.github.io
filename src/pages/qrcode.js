@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import QRCodeStyling from 'qr-code-styling';
 
 function isValidUrl(value) {
@@ -149,6 +150,9 @@ export default function QrCodeStylingGenerator() {
 
   return (
     <Layout title="Free QR Code Generator" description="Generate a QR code for a URL and download it as an SVG.">
+      <Head>
+        <meta name="keywords" content="qr code generator, free qr code, svg qr code, qr code, qrcode, free qrcode generator" />
+      </Head>
       <div
         style={{
           padding: '6rem 2rem',
